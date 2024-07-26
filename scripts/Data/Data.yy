@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Data",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Data",
+  "parent":{
+    "name":"Sheets-To-GameMaker",
+    "path":"Sheets-To-GameMaker.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
