@@ -3,7 +3,9 @@
 
 ### How to use
 
-1. Create a Google Sheet (for example https://docs.google.com/spreadsheets/d/1VSeA9ihxDgwtcwskuRIWuSZtFo5W2goKq_i2OV8MqUY/edit?gid=0#gid=0)
+1. Create a Google Sheet - for example:
+
+https://docs.google.com/spreadsheets/d/1VSeA9ihxDgwtcwskuRIWuSZtFo5W2goKq_i2OV8MqUY/edit?gid=0#gid=0
 
 ![Example Google Sheet](https://i.ibb.co/rG9rjyKM/table-blank.png)
 
@@ -39,9 +41,11 @@ Each circle will be a struct containing the colour, position, and size data and 
 
 ![Import button](https://i.ibb.co/274RQmSH/import.png)
 
-6. Create an object to store the data (i.e. obj_data)
-7. Open the 'Create' event
-8. Set the following variable:
+6. Create an object to store the data (i.e. obj_demo)
+
+![obj_demo](https://i.ibb.co/gL4H8JXd/obj-demo.png)
+
+8. Open the 'Create' event and set the following variable:
 
 ```loading_complete = false;```
 
