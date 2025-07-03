@@ -1,0 +1,3 @@
+/// @desc Refresh data
+
+GSRefresh();

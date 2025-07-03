@@ -1,6 +1,6 @@
 {
-  "$GMProject":"",
-  "%Name":"Sheets-To-GameMaker",
+  "$GMProject":"v1",
+  "%Name":"Google Sheets Library",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -9,20 +9,23 @@
     "name":"Default",
   },
   "defaultScriptType":1,
-  "Folders":[],
+  "Folders":[
+    {"$GMFolder":"","%Name":"GMSheets","folderPath":"folders/GMSheets.yy","name":"GMSheets","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Demo","folderPath":"folders/Demo.yy","name":"Demo","resourceType":"GMFolder","resourceVersion":"2.0",},
+  ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.13.1.193",
   },
-  "name":"Sheets-To-GameMaker",
+  "name":"Google Sheets Library",
   "resources":[
-    {"id":{"name":"obj_data_tab","path":"objects/obj_data_tab/obj_data_tab.yy",},},
-    {"id":{"name":"obj_data","path":"objects/obj_data/obj_data.yy",},},
+    {"id":{"name":"GSTab","path":"objects/GSTab/GSTab.yy",},},
     {"id":{"name":"obj_demo","path":"objects/obj_demo/obj_demo.yy",},},
     {"id":{"name":"rm_demo","path":"rooms/rm_demo/rm_demo.yy",},},
-    {"id":{"name":"Data","path":"scripts/Data/Data.yy",},},
+    {"id":{"name":"GMSheets","path":"scripts/GMSheets/GMSheets.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
