@@ -84,7 +84,7 @@ By default, the data will only update once when the game starts. To update the d
 
 14. Display the data however you want
 
-For the demo, set some basic text formatting:
+For the demo, create a Draw event and set some basic text formatting:
 
 ```
 draw_set_halign(fa_center);
@@ -98,7 +98,7 @@ Then, if loading is not complete, draw a basic loading message:
 ```
 if not loading_complete
 {
-	draw_text(room_width / 2, room_height / 2, "Loading...");
+    draw_text(room_width / 2, room_height / 2, "Loading...");
 }
 ```
 
@@ -107,15 +107,15 @@ If loading is complete, draw the circles:
 ```
 else
 {
-	var _arr = shapes.array;
-	var _len = array_length(_arr);
-	
-	for (var i = 0; i < _len; i++;)
-	{
-		var _circle = _arr[i];
-		var _col = make_colour_rgb(_circle.r, _circle.g, _circle.b);
-		draw_set_colour(_col);
-		draw_circle(_circle.x, _circle.y, _circle.radius, false);
-	}
+    var _arr = shapes.array;
+    var _len = array_length(_arr);
+
+    for (var i = 0; i < _len; i++;)
+    {
+        var _circle = _arr[i];
+        var _col = make_colour_rgb(_circle.r, _circle.g, _circle.b);
+        draw_set_colour(_col);
+        draw_circle(_circle.x, _circle.y, _circle.radius, false);
+    }
 }
 ```
