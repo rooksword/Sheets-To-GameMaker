@@ -3,7 +3,9 @@
 
 ### How to use
 
-1. Create a Google Sheet (for example https://docs.google.com/spreadsheets/d/1VSeA9ihxDgwtcwskuRIWuSZtFo5W2goKq_i2OV8MqUY/edit?gid=0#gid=0)
+1. Create a Google Sheet - for example:
+
+https://docs.google.com/spreadsheets/d/1VSeA9ihxDgwtcwskuRIWuSZtFo5W2goKq_i2OV8MqUY/edit?gid=0#gid=0
 
 ![Example Google Sheet](https://i.ibb.co/rG9rjyKM/table-blank.png)
 
@@ -39,9 +41,11 @@ Each circle will be a struct containing the colour, position, and size data and 
 
 ![Import button](https://i.ibb.co/274RQmSH/import.png)
 
-6. Create an object to store the data (i.e. obj_data)
-7. Open the 'Create' event
-8. Set the following variable:
+6. Create an object to store the data (i.e. obj_demo)
+
+![obj_demo](https://i.ibb.co/gL4H8JXd/obj-demo.png)
+
+8. Open the 'Create' event and set the following variable:
 
 ```loading_complete = false;```
 
@@ -80,7 +84,7 @@ By default, the data will only update once when the game starts. To update the d
 
 14. Display the data however you want
 
-For the demo, set some basic text formatting:
+For the demo, create a Draw event and set some basic text formatting:
 
 ```
 draw_set_halign(fa_center);
@@ -94,7 +98,7 @@ Then, if loading is not complete, draw a basic loading message:
 ```
 if not loading_complete
 {
-	draw_text(room_width / 2, room_height / 2, "Loading...");
+    draw_text(room_width / 2, room_height / 2, "Loading...");
 }
 ```
 
@@ -103,15 +107,15 @@ If loading is complete, draw the circles:
 ```
 else
 {
-	var _arr = shapes.array;
-	var _len = array_length(_arr);
-	
-	for (var i = 0; i < _len; i++;)
-	{
-		var _circle = _arr[i];
-		var _col = make_colour_rgb(_circle.r, _circle.g, _circle.b);
-		draw_set_colour(_col);
-		draw_circle(_circle.x, _circle.y, _circle.radius, false);
-	}
+    var _arr = shapes.array;
+    var _len = array_length(_arr);
+
+    for (var i = 0; i < _len; i++;)
+    {
+        var _circle = _arr[i];
+        var _col = make_colour_rgb(_circle.r, _circle.g, _circle.b);
+        draw_set_colour(_col);
+        draw_circle(_circle.x, _circle.y, _circle.radius, false);
+    }
 }
 ```
